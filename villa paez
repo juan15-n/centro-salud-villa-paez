@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Salud Villa Páez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .specialties, .appointment-form {
+            margin: 20px 0;
+        }
+        .specialty {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .appointment-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Centro de Salud Villa Páez</h1>
+        <p>Atendemos con amor y dedicación a nuestra comunidad</p>
+    </header>
+    <nav>
+        <a href="#especialidades">Especialidades Médicas</a>
+        <a href="#turnos">Solicitar Turno</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="especialidades" class="specialties">
+            <h2>Especialidades Médicas</h2>
+            <div class="specialty">
+                <h3>Clínica Médica</h3>
+                <p>Atención integral para adultos.</p>
+            </div>
+            <div class="specialty">
+                <h3>Nutrición</h3>
+                <p>Asesoramiento y planes alimentarios personalizados.</p>
+            </div>
+            <div class="specialty">
+                <h3>Pediatría</h3>
+                <p>Cuidados y control del crecimiento infantil.</p>
+            </div>
+            <div class="specialty">
+                <h3>Ginecología y Obstetricia</h3>
+                <p>Atención a la salud femenina y seguimiento del embarazo.</p>
+            </div>
+            <div class="specialty">
+                <h3>Medicina Familiar</h3>
+                <p>Atención integral a la familia.</p>
+            </div>
+            <div class="specialty">
+                <h3>Odontología</h3>
+                <p>Cuidados y tratamientos dentales.</p>
+            </div>
+        </section>
+        <section id="turnos" class="appointment-form">
+            <h2>Solicitar Turno</h2>
+            <form>
+                <label for="name">Nombre Completo:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Teléfono:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="specialty">Especialidad:</label><br>
+                <select id="specialty" name="specialty" required>
+                    <option value="clinica_medica">Clínica Médica</option>
+                    <option value="nutricion">Nutrición</option>
+                    <option value="pediatria">Pediatría</option>
+                    <option value="ginecologia_obstetricia">Ginecología y Obstetricia</option>
+                    <option value="medicina_familiar">Medicina Familiar</option>
+                    <option value="odontologia">Odontología</option>
+                </select><br>
+                <label for="date">Fecha:</label><br>
+                <input type="date" id="date" name="date" required><br>
+                <label for="time">Hora:</label><br>
+                <input type="time" id="time" name="time" required><br>
+                <input type="submit" value="Solicitar Turno">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Centro de Salud Villa Páez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
